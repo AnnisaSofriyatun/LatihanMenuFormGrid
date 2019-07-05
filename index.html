@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>Latian Bikin Menu Bootstrap</title>
+		<link href="assets/bootstrap.css" rel="stylesheet">
+		<script type="text/javascript" src="assets/jquery.js"></script>
+		<script type="text/javascript" src="assets/bootstrap.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<!--<a class="navbar-brand" href="/">Latihan</a>-->
+			<button class="navbar-toggler" type="button" data-toggler="collapse"
+				data-target="#navbarSupportContent"
+				aria-controls="navbarSupportContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+			</button>
+			
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<img class="image" border="0" src="assets/dts.jpg" width="85px"; height="45px" style="margin:1px; padding:0px">
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="galery.html">Galery</a>
+					</li>
+					<li class="nav-item dropdown"> 
+						<a class="nav-link dropdown-toggle" href="#"
+						role="button"  data-toggle="dropdown"
+						area-haspopup="true"
+						area-expand="false">Profil</a>
+						<!--<a class="nav-link" href="galery.html">Galery</a>-->
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="profil/visi.html">Visi dan Misi</a>
+							<a class="dropdown-item" href="profil/tentang.html">Tentang Kami</a>
+							<a class="dropdown-item" href="profil/kontak.html">Kontak</a>
+						</div>
+					</li>
+
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search"
+						placeholder="Pencarian" area-label="Pencarian">
+						<button class="btn btn-outline-success my-2 my-sm-0"
+						type="submit">Search</button>
+					</form>
+				
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container">
+			<form id="submitBerkas" style="padding-top:10px;">
+				<!--nama
+					no hp
+					email
+					alamat-->
+				<div class="form-group">
+					<table>Nama Lengkap</table>
+					<input type="text" class="form-control"
+					placeholder="Tuliskan Nama Lengkap">
+				</div>
+				<div class="form-group">
+					<table>Nomer Telepon</table>
+					<input type="number" class="form-control"
+					placeholder="Tuliskan Nomer Telepon">
+				</div>
+				<div class="form-group">
+					<table>Nama Lengkap</table>
+					<input type="email" class="form-control"
+					placeholder="Tuliskan Email">
+				</div>
+				<div class="form-group">
+					<table>Alamat Lengkap</table>
+					<textarea class="form-control" rows="5"> </textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Simpan</button>
+			</form>
+			<form class="form-inline" id="FormSatuBaris" style="padding-top:30px;">
+				<div class="form-group">
+					<label style="padding-right:10px;">Email</label>
+					<input style="padding-right:5px;" type="email" class="form-control">
+				</div>
+				<div class="form-group" style="padding-right:25px;">
+					<label style="padding-left:10px; padding-right:10px;">Password</label>
+					<input style="padding-right:25px;" type="password" class="form-control">
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form>
+
+			<form class="form-horizontal" id="formHorizontal" style="padding-top:30px;">
+				<div class="form-group row">
+					<label class="control-label col-sm-2">Nama Lengkap</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2">Nomer Telepon</label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-primary"> Login</button>
+			</form>
+
+		</div>
+	</body>
+</html>
